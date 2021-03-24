@@ -13,7 +13,8 @@ sudo ldconfig
 make training
 sudo make training-install
 
-./create_basic_data.sh
+./create_box.sh
+./merge_data.sh
 ./train_basic_model.sh
 
 
