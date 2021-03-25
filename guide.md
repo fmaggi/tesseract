@@ -21,10 +21,23 @@ make training
 
 sudo make training-install
 
+export TESSDATA_PREFIX=(path/to/training/dir)/training/tesseract/tessdata
+
+
+
+-------Esto no------
 
 ./create_box.sh
+  editar como sea necesario los box
 
 ./merge_data.sh
+
+--------------------
+
+
+------Seguir aca-----
+
+editar all-lstmf para que apunten a los archivos .lstmf
 
 ./train_basic_model.sh
 
