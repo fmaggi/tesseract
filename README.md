@@ -1,4 +1,5 @@
 Download:
+
   ./download_data.sh
 
   cd training/tesseract/
@@ -21,6 +22,7 @@ Download:
 
 
 Create data:
+
   mkdir training/ground-truth
 
   (Store .tif files in ground-truth folder)
