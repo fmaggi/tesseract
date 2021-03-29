@@ -1,3 +1,7 @@
 spaoutput/**
+tifs/**
 training/**
-venv/**
+
+all-lstmf
+eval-lstmf
+train-lstmf

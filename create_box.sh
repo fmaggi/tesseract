@@ -1,3 +1,5 @@
+export TESSDATA_PREFIX=~/trainig_data/training/tesseract/tessdata
+
 cd ./training/ground-truth
 
 for file in *.tif; do
@@ -5,13 +7,6 @@ for file in *.tif; do
   base=`basename $file .tif`
   tesseract $file $base wordstrbox
 
-  feh $file
-  cat $base.box
-  echo "Hay que editar? [y/n]"
-  read var
-  if [ "$var" = y ]
-  then
-    echo "editing"
-    vim $base.box
-  fi
+  feh $file &
+  vim $base.box
 done
